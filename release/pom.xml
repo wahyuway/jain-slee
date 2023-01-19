@@ -106,7 +106,7 @@
 										${checkout.basedir}/core
 									</checkoutDirectory>
 									<connectionUrl>
-										scm:git:https://github.com/RestComm/jain-slee.git
+										scm:git:https://github.com/wahyuway/jain-slee.git
 									</connectionUrl>
 								</configuration>
 							</execution>
