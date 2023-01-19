@@ -24,32 +24,32 @@
 	<property name="h2.distro.jar.path" value="h2-${h2.version}.jar" />
 	<available file="${ant.file.restcomm.release}/../${h2.distro.jar.path}" property="got.h2" />
 
-	<property name="github.url" value="http://github.com/RestComm" />
+	<property name="github.url" value="https://github.com/RestComm" />
 	<property name="mvn.javadoc" value="org.apache.maven.plugins:maven-javadoc-plugin:2.10.4" />
 
 	<!-- Diameter -->
 	<!-- https://mobicents.ci.cloudbees.com/view/JSLEE/job/RestComm-jDiameter-1.x/134/artifact/release/restcomm-diameter-mux-wildfly-1.7.0.134.zip -->
 	<property name="diameter.build" value="160"/>
 	<property name="diameter.version" value="1.7.1-${diameter.build}"/>
-	<property name="diameter.zip" value="restcomm-diameter-mux-wildfly-${diameter.version}.zip"/>
+	<property name="diameter.zip" value="${diameter.version}.zip"/>
 	<property name="diameter.download.url"
-			  value="${github.url}/jdiameter/releases/download/${diameter.version}/${diameter.zip}" />
+			  value="${github.url}/jdiameter/archive/refs/tags/${diameter.zip}" />
 	<property name="diameter.distro.zip.path" value="restcomm-diameter.zip" />
 
 	<!-- SS7 -->
-	<property name="ss7.build" value="144"/>
-	<property name="ss7.version" value="7.4.0-${ss7.build}"/>
+	<property name="ss7.build" value="11"/>
+	<property name="ss7.version" value="8.1.1-${ss7.build}"/>
 	<property name="ss7.zip" value="restcomm-jss7-${ss7.version}.zip"/>
 	<property name="ss7.download.url"
-			  value="${github.url}/jss7/releases/download/${ss7.version}/${ss7.zip}" />
+			  value="${github.url}/jss7/archive/refs/tags/${ss7.zip}" />
 	<property name="ss7.distro.zip.path" value="restcomm-ss7.zip" />
 	
 	<!-- SMPP Extensions -->
 	<property name="smppext.build" value="137"/>
 	<property name="smppext.version" value="7.2.0-${smppext.build}"/>
-	<property name="smppext.zip" value="restcomm-smpp-extensions-${smppext.version}.zip"/>
+	<property name="smppext.zip" value="${smppext.version}.zip"/>
 	<property name="smppext.download.url"
-			  value="${github.url}/smpp-extensions/releases/download/${smppext.version}/${smppext.zip}" />
+			  value="${github.url}/smpp-extensions/archive/refs/tags/${smppext.zip}" />
 	<property name="smppext.distro.zip.path" value="restcomm-smpp-extensions.zip" />
 
 	<taskdef onerror="fail" resource="net/sf/antcontrib/antlib.xml">
