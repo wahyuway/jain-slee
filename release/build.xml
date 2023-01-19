@@ -39,7 +39,7 @@
 	<!-- SS7 -->
 	<property name="ss7.build" value="11"/>
 	<property name="ss7.version" value="8.1.1-${ss7.build}"/>
-	<property name="ss7.zip" value="restcomm-jss7-${ss7.version}.zip"/>
+	<property name="ss7.zip" value="${ss7.version}.zip"/>
 	<property name="ss7.download.url"
 			  value="${github.url}/jss7/archive/refs/tags/${ss7.zip}" />
 	<property name="ss7.distro.zip.path" value="restcomm-ss7.zip" />
