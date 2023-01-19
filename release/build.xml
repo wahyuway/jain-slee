@@ -25,7 +25,7 @@
 	<available file="${ant.file.restcomm.release}/../${h2.distro.jar.path}" property="got.h2" />
 
 	<property name="github.url" value="https://github.com/RestComm" />
-	<property name="mvn.javadoc" value="org.apache.maven.plugins:maven-javadoc-plugin:2.10.4" />
+	<property name="mvn.javadoc" value="org.apache.maven.plugins:maven-javadoc-plugin:3.4.1" />
 
 	<!-- Diameter -->
 	<!-- https://mobicents.ci.cloudbees.com/view/JSLEE/job/RestComm-jDiameter-1.x/134/artifact/release/restcomm-diameter-mux-wildfly-1.7.0.134.zip -->
