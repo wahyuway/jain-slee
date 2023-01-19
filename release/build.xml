@@ -373,7 +373,7 @@
 		</replace>
 
 		<!-- org.apache.commons.lang -->
-		<replace casesensitive="false" file="${wildfly.modules}/org/apache/commons/lang/main/module.xml">
+		<replace casesensitive="false" file="${wildfly.modules}/org/apache/commons/lang3/main/module.xml">
 			<replacetoken><![CDATA[</dependencies>]]></replacetoken>
 			<replacevalue><![CDATA[
 		<module name="org.restcomm.slee.container.lib"/>
