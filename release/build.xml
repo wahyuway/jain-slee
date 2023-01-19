@@ -343,7 +343,7 @@
 
 	<target name="get-wildfly" unless="got.wildfly">
 		<echo message="Downloading WildFly ${wildfly.version}"/>
-		<get verbose="false" dest="${ant.file.restcomm.release}/../${wildfly.distro.zip.path}" src="http://download.jboss.org/wildfly/${wildfly.version}/wildfly-${wildfly.version}.zip" />
+		<get verbose="false" dest="${ant.file.restcomm.release}/../${wildfly.distro.zip.path}" src="https://github.com/wildfly/wildfly/releases/download/${wildfly.version}/wildfly-${wildfly.version}.zip" />
 	</target>
 
 	<target name="unzip-wildfly">
@@ -357,7 +357,7 @@
 		<!-- H2 database -->
 		<echo message="Downloading last H2 database ${wildfly.version}"/>
 		<mkdir dir="${tmp.wildfly.home}"/>
-		<get verbose="false" dest="${tmp.wildfly.home}/${h2.distro.jar.path}" src="http://repo2.maven.org/maven2/com/h2database/h2/${h2.version}/h2-${h2.version}.jar" />
+		<get verbose="false" dest="${tmp.wildfly.home}/${h2.distro.jar.path}" src="http://repo1.maven.org/maven2/com/h2database/h2/${h2.version}/h2-${h2.version}.jar" />
 
 		<delete><fileset dir="${wildfly.modules}/com/h2database/h2/main/" includes="**/*.jar"/></delete>
 		<copy file="${tmp.wildfly.home}/${h2.distro.jar.path}" todir="${wildfly.modules}/com/h2database/h2/main/"/>
