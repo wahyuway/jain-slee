@@ -15,7 +15,7 @@
 	<version>7.0.0-SNAPSHOT</version>
 
 	<properties>
-		<core.scmVersion>7.2.0-264</core.scmVersion>
+		<core.scmVersion>dev</core.scmVersion>
 		<core.scmVersionType>tag</core.scmVersionType>
 
 		<jdbc.scmVersion>7.2.0-375</jdbc.scmVersion>
