@@ -357,7 +357,7 @@
 		<!-- H2 database -->
 		<echo message="Downloading last H2 database ${wildfly.version}"/>
 		<mkdir dir="${tmp.wildfly.home}"/>
-		<get verbose="false" dest="${tmp.wildfly.home}/${h2.distro.jar.path}" src="http://repo1.maven.org/maven2/com/h2database/h2/${h2.version}/h2-${h2.version}.jar" />
+		<get verbose="false" dest="${tmp.wildfly.home}/${h2.distro.jar.path}" src="https://repo1.maven.org/maven2/com/h2database/h2/${h2.version}/h2-${h2.version}.jar" />
 
 		<delete><fileset dir="${wildfly.modules}/com/h2database/h2/main/" includes="**/*.jar"/></delete>
 		<copy file="${tmp.wildfly.home}/${h2.distro.jar.path}" todir="${wildfly.modules}/com/h2database/h2/main/"/>
