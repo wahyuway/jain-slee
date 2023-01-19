@@ -74,7 +74,7 @@
 										${checkout.basedir}/core
 									</checkoutDirectory>
 									<connectionUrl>
-										scm:git:https://github.com/RestComm/jain-slee.git
+										scm:git:https://github.com/wahyuway/jain-slee.git
 									</connectionUrl>
 								</configuration>
 							</execution>
@@ -106,7 +106,7 @@
 										${checkout.basedir}/core
 									</checkoutDirectory>
 									<connectionUrl>
-										scm:git:https://github.com/RestComm/jain-slee.git
+										scm:git:https://github.com/wahyuway/jain-slee.git
 									</connectionUrl>
 								</configuration>
 							</execution>
@@ -364,8 +364,8 @@
 	</build>
 
 	<scm>
-		<connection>scm:git:ssh://git@github.com:RestComm/jain-slee.git</connection>
-		<developerConnection>scm:git:ssh://git@github.com:RestComm/jain-slee.git</developerConnection>
+		<connection>scm:git:ssh://git@github.com:wahyuway/jain-slee.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:wahyuway/jain-slee.git</developerConnection>
 	</scm>
 
 	<!-- dupe info from parent, but it's only way to retrieve the parent without 
