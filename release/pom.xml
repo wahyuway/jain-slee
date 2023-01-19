@@ -18,7 +18,7 @@
 		<core.scmVersion>dev</core.scmVersion>
 		<core.scmVersionType>tag</core.scmVersionType>
 
-		<jdbc.scmVersion>7.0.11</jdbc.scmVersion>
+		<jdbc.scmVersion>master</jdbc.scmVersion>
 		<jdbc.scmVersionType>tag</jdbc.scmVersionType>
 		<sip.scmVersion>7.2.0-278</sip.scmVersion>
 		<sip.scmVersionType>tag</sip.scmVersionType>
@@ -124,7 +124,7 @@
 										${checkout.basedir}/jdbc
 									</checkoutDirectory>
 									<connectionUrl>
-										scm:git:https://github.com/RestComm/jain-slee.jdbc.git
+										scm:git:https://github.com/wahyuway/jain-slee.jdbc.git
 									</connectionUrl>
 								</configuration>
 							</execution>
